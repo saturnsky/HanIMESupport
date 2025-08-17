@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 처리방침 - 한 입력기</title>
+    <meta name="description" content="한 입력기 iOS 키보드 앱 개인정보 처리방침">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 20px;
+            color: white;
+        }
+        .privacy-section {
+            margin-bottom: 40px;
+        }
+        .privacy-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .highlight-box {
+            background: var(--card-bg);
+            border: 2px solid var(--primary-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .highlight-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .back-link:hover {
+            opacity: 0.7;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .date-info {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        .email-pseudo {
+            font-family: monospace;
+            font-weight: 600;
+            color: var(--primary-color);
+            user-select: all;
+            cursor: text;
+        }
+        .email-pseudo::before {
+            content: 'developer';
+        }
+        .email-pseudo::after {
+            content: '@saturnsky.io';
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-container">
+        <a href="/" class="back-link">← 메인 페이지로 돌아가기</a>
+        
+        <div class="privacy-header">
+            <h1>개인정보 처리방침</h1>
+            <p>한 입력기 iOS 키보드 앱</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>🔒 중요 안내</h3>
+            <p><strong>한 입력기는 어떠한 개인정보도 수집하지 않습니다.</strong></p>
+            <p>모든 설정과 데이터는 오직 사용자의 기기에만 저장됩니다.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>1. 개인정보의 수집 및 이용</h2>
+            <p>한 입력기는 사용자의 개인정보를 일체 수집하지 않습니다.</p>
+            <ul>
+                <li>입력된 텍스트를 저장하지 않습니다</li>
+                <li>키 입력 패턴을 기록하지 않습니다</li>
+                <li>사용자 식별 정보를 수집하지 않습니다</li>
+                <li>위치 정보를 수집하지 않습니다</li>
+                <li>연락처나 사진에 접근하지 않습니다</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>2. 데이터 저장 및 처리</h2>
+            <p>한 입력기의 모든 설정과 데이터는 다음과 같이 처리됩니다:</p>
+            <ul>
+                <li>모든 설정은 iOS 기기 내부에만 저장됩니다</li>
+                <li>외부 서버로 데이터를 전송하지 않습니다</li>
+                <li>인터넷 연결 없이 완전히 오프라인으로 작동합니다</li>
+                <li>iCloud 동기화를 사용하지 않습니다</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>3. iOS 시스템 수준 데이터</h2>
+            <p>한 입력기 앱 자체는 데이터를 수집하지 않지만, iOS 시스템의 일부로서 다음과 같은 표준 운영이 이루어집니다:</p>
+            <ul>
+                <li>앱 다운로드 및 업데이트 시 App Store를 통한 기본 정보 전송</li>
+                <li>후원 기능 이용 시 App Store를 통한 거래 정보 처리</li>
+                <li>iOS 진단 및 사용 정보 (사용자가 Apple에 공유를 허용한 경우)</li>
+                <li>충돌 리포트 (사용자가 Apple에 공유를 허용한 경우)</li>
+            </ul>
+            <p>이러한 정보는 Apple의 개인정보 처리방침에 따라 처리되며, 한 입력기 개발자는 개인식별정보에 접근할 수 없습니다. 후원의 경우에도 Apple이 익명화된 거래 정보만을 제공합니다.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>4. 제3자 제공</h2>
+            <p>한 입력기는 어떠한 데이터도 수집하지 않으므로, 제3자에게 제공할 정보가 없습니다.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>4. 키보드 접근 권한</h2>
+            <p>iOS 키보드로서 한 입력기는 다음의 시스템 권한을 요청합니다:</p>
+            <ul>
+                <li><strong>전체 접근 허용</strong>: 햅틱 피드백을 위해 필요하지만, 이 권한으로 수집되는 데이터는 없습니다</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>5. 데이터 보안</h2>
+            <p>한 입력기는 다음과 같은 방식으로 사용자의 프라이버시를 보호합니다:</p>
+            <ul>
+                <li>네트워크 통신 기능이 없어 데이터 유출 가능성이 원천적으로 차단됩니다</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>6. 아동의 개인정보</h2>
+            <p>한 입력기는 연령에 관계없이 모든 사용자의 개인정보를 수집하지 않으므로, 아동의 개인정보 보호에 대한 별도의 조치가 필요하지 않습니다.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>7. 개인정보 처리방침 변경</h2>
+            <p>이 개인정보 처리방침은 관련 법령 및 정책 변경에 따라 수정될 수 있습니다. 변경 사항은 이 페이지를 통해 공지됩니다.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>8. 문의사항</h2>
+            <p>개인정보 처리방침에 대한 문의사항이 있으시면 아래 연락처로 문의해 주세요:</p>
+            <p><strong>이메일:</strong> <span class="email-pseudo"></span></p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>요약</h3>
+            <p>한 입력기는 어떠한 개인정보도 수집, 저장, 전송하지 않습니다.</p>
+        </div>
+
+        <div class="date-info">
+            <p><strong>시행일:</strong> 2025년 8월 17일</p>
+            <p><strong>최종 수정일:</strong> 2025년 8월 17일</p>
+        </div>
+    </div>
+</body>
+</html>
